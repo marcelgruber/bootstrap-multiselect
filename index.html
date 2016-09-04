@@ -6323,6 +6323,8 @@ $.multiselect = multiselect;
 $("#example").multiselect();
 </pre>
                         </dd>
+                        <dt>How can I make sure this plugin won't conflict with other plugins?</dt>
+                        <dd>Make sure not to make blanket initializations on whole input types. For example, initializing other plugins on all checkboxes like this: `$(":checkbox").checkboxpicker();` will cause problems with this plugin because it uses checkboxes. Be defensive in your coding and only initialize on specific classes and IDs.</dd>
                     </dl>
 
                     <div class="page-header">
